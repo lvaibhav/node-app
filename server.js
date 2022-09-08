@@ -12,5 +12,9 @@ app.get('/', (req, res) => {
   res.send('<h1 style="color:green;">hello world!! I am Vaibhav </h1> \n');
 });
 
+app.get('/health', (req, res) => {
+  res.send('<h1 style="color:red;">healthy</h1> \n');
+});
+
 app.listen(PORT, HOST);
 console.log(`Running on http://${HOST}:${PORT}`);
